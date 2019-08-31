@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "YouTimeStamp",
+  "version": "1.0",
+
+  "description": "Add timestamps display in YouTube",
+
+  "icons": {
+    "48": "icons/yts-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["youTimeStamp.js"]
+    }
+  ]
+}
